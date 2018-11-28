@@ -72,8 +72,8 @@ public abstract class Vehicle implements IMovable {
      */
     @Override
     public void move() {
-        x = Math.cos(Math.toRadians(rotation)) * speed;
-        y = Math.sin(Math.toRadians(rotation)) * speed;
+        x += Math.cos(Math.toRadians(rotation)) * speed;
+        y += Math.sin(Math.toRadians(rotation)) * speed;
     }
 
 
