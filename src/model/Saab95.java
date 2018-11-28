@@ -1,3 +1,5 @@
+package model;
+
 import java.awt.*;
 
 /**
@@ -9,10 +11,10 @@ public class Saab95 extends Car {
     private boolean turboOn;
 
     /**
-     * Initiates a standard Saab95
+     * Initiates a standard model.Saab95
      */
     public Saab95() {
-        super(2, 125, Color.red, "Saab95", 0, 0, 1500);
+        super(2, 125, Color.red, "model.Saab95", 0, 0, 1500);
         setTurboOff();
     }
 

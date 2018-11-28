@@ -1,3 +1,5 @@
+package model;
+
 /**
  * Reassures the that an object implements move functionality.
  */

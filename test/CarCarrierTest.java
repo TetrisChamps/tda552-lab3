@@ -1,3 +1,4 @@
+import model.*;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -38,8 +39,8 @@ class CarCarrierTest {
         Car c = new Saab95();
         carrier.addCar(c, transporter);
         Scania scania = new Scania();
-        assertThrows(IllegalStateException.class, () -> carrier.addCar(scania, transporter), "Car is too heave");
-        assertThrows(IllegalStateException.class, () -> carrier.addCar(c, transporter), "Car is already loaded");
+        assertThrows(IllegalStateException.class, () -> carrier.addCar(scania, transporter), "model.Car is too heave");
+        assertThrows(IllegalStateException.class, () -> carrier.addCar(c, transporter), "model.Car is already loaded");
         carrier = new CarCarrier(5, 2000);
         for (int i = 0; i < 5; i++) {
             carrier.addCar(new Saab95(), transporter);

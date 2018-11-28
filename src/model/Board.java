@@ -1,3 +1,5 @@
+package model;
+
 /**
  * Representation of an adjustable board
  */

@@ -1,3 +1,5 @@
+package model;
+
 import java.awt.*;
 
 /**
@@ -76,7 +78,7 @@ public abstract class Vehicle implements IMovable {
 
 
     /**
-     * Returns the maximum acceleration of the Vehicle.
+     * Returns the maximum acceleration of the model.Vehicle.
      *
      * @return The increase in speed.
      **/
@@ -140,7 +142,7 @@ public abstract class Vehicle implements IMovable {
 
     /**
      * Get rotation of the vehicle
-     * @return Vehicle rotation
+     * @return model.Vehicle rotation
      */
 
     public double getRotation() {
@@ -176,14 +178,14 @@ public abstract class Vehicle implements IMovable {
     /**
      * Loads the vehicle
      */
-    void load() {
+    public void load() {
         loaded = true;
     }
 
     /**
      * Unloads the vehicle
      */
-    void unload() {
+    public void unload() {
         loaded = false;
     }
 
@@ -192,11 +194,11 @@ public abstract class Vehicle implements IMovable {
      *
      * @return
      */
-    boolean isLoaded() {
+    public boolean isLoaded() {
         return loaded;
     }
 
-    int getWeight() {
+    public int getWeight() {
         return weight;
     }
 }

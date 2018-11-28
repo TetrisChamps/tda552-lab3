@@ -1,3 +1,5 @@
+package model;
+
 import java.awt.*;
 
 /**
@@ -14,11 +16,11 @@ public class Volvo240 extends Car{
      * Initiates a standard volvo240
      */
     public Volvo240(){
-        super(4,100,Color.black,"Volvo240", 0, 0, 1200);
+        super(4,100,Color.black,"model.Volvo240", 0, 0, 1200);
     }
 
     /**
-     * Gets the Volvo240 maximum acceleration, is based of the maxSpeed and the trimFactor of the car
+     * Gets the model.Volvo240 maximum acceleration, is based of the maxSpeed and the trimFactor of the car
      * @return Max acceleration
      */
     public double speedFactor(){

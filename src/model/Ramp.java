@@ -1,3 +1,5 @@
+package model;
+
 public class Ramp extends Board {
     private boolean up = true; // Whether the board is up or down
 

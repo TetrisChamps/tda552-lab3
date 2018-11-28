@@ -1,3 +1,5 @@
+package model;
+
 /**
  * An interface for adding cars
  */

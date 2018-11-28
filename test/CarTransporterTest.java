@@ -1,3 +1,5 @@
+import model.CarTransporter;
+import model.Volvo240;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -27,7 +29,7 @@ class CarTransporterTest {
         int amountOfLoadedCars = carTransporter.getNumberOfCars();
         carTransporter.addCar(volvo240);
 
-        assertEquals(amountOfLoadedCars + 1, carTransporter.getNumberOfCars(), "Car was not loaded");
+        assertEquals(amountOfLoadedCars + 1, carTransporter.getNumberOfCars(), "model.Car was not loaded");
         assertEquals(carTransporter.removeCar(), volvo240, "The unloaded car is not the same as the loaded");
 
         carTransporter.raiseRamp();

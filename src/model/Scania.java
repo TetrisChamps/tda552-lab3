@@ -1,16 +1,18 @@
+package model;
+
 import java.awt.*;
 
 /**
- * A representation of a Scania truck.
+ * A representation of a model.Scania truck.
  */
 public class Scania extends Car {
     private Board board = new Board();
 
     /**
-     * Creates a normal Scania truck.
+     * Creates a normal model.Scania truck.
      */
     public Scania() {
-        super(2, 400, Color.RED, "Scania", 0, 0, 5000);
+        super(2, 400, Color.RED, "model.Scania", 0, 0, 5000);
     }
 
     /**
@@ -48,7 +50,7 @@ public class Scania extends Car {
      *
      * @return
      */
-    int getBoardAngle(){
+    public int getBoardAngle(){
         return board.getAngle();
     }
 }

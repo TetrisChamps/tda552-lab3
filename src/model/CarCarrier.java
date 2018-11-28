@@ -1,3 +1,5 @@
+package model;
+
 import java.util.LinkedList;
 import java.util.List;
 
@@ -22,7 +24,7 @@ public class CarCarrier {
     }
 
     /**
-     * Creates the CarCarrier object.
+     * Creates the model.CarCarrier object.
      *
      * @param capacity  The amount of cars that the ferry can hold.
      * @param maxWeight The maximum weight for a car that can be carried
@@ -51,7 +53,7 @@ public class CarCarrier {
                     car.setPosition(vehicle.getX(), vehicle.getY());
                     return;
                 }
-                throw new IllegalStateException("Car is too heavy");
+                throw new IllegalStateException("model.Car is too heavy");
             }
             throw new IllegalStateException("Cannot add a car that is already being transported!");
         }
@@ -87,7 +89,7 @@ public class CarCarrier {
      * @return list of carried cars
      */
     public List<Car> getCars() {
-        System.out.println("Car size: " + cars.size());
+        System.out.println("model.Car size: " + cars.size());
         System.out.println("Cloned car size" + (List<Car>)cars.clone() );
         return (List<Car>)cars.clone();
     }

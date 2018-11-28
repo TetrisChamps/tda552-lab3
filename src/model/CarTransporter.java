@@ -1,3 +1,5 @@
+package model;
+
 import java.awt.*;
 
 /**
@@ -7,7 +9,7 @@ public class CarTransporter extends Car implements  ICarTransporter{
     private CarCarrier transporter = new CarCarrier(15, 2000);
     private Ramp ramp = new Ramp();
 
-    protected int getNumberOfCars(){
+    public int getNumberOfCars(){
         return transporter.getCars().size();
     }
 
@@ -16,7 +18,7 @@ public class CarTransporter extends Car implements  ICarTransporter{
      *
      */
     public CarTransporter() {
-        super(2, 437, Color.GRAY, "Car transporter AV", 0, 0, 10_000);
+        super(2, 437, Color.GRAY, "model.Car transporter AV", 0, 0, 10_000);
     }
     /**
      * Adds a car to the car trailer if the ramp is down.
