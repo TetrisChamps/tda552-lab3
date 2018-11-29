@@ -14,13 +14,13 @@ public class CarFerry extends Vehicle implements ICarTransporter {
     private double enginePower;
 
     /**
-     * Initiates an instances of a model.CarFerry
+     * Initiates an instances of a CarFerry
      *
      * @param x           The start x coordinate of the ferry
      * @param y           The start y coordinate
      */
     public CarFerry(double x, double y) {
-        super(Color.RED, "model.Car Ferry 101", x, y, 30000000);
+        super(Color.RED, "Car Ferry 101", x, y, 30000000);
         this.enginePower = 3000;
         transporter = new CarCarrier(300, 2000);
     }

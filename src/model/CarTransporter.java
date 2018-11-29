@@ -18,7 +18,7 @@ public class CarTransporter extends Car implements  ICarTransporter{
      *
      */
     public CarTransporter() {
-        super(2, 437, Color.GRAY, "model.Car transporter AV", 0, 0, 10_000);
+        super(2, 437, Color.GRAY, "Car transporter AV", 0, 0, 10_000);
     }
     /**
      * Adds a car to the car trailer if the ramp is down.

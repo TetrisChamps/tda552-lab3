@@ -6,14 +6,14 @@ import java.awt.*;
  * A representation of a high level vehicle.
  */
 public abstract class Vehicle implements IMovable {
+    private final String modelName; // The model name of the vehicle
+    final private int weight;
     private Color color; // Color of the vehicle
     private boolean loaded = false; // Whether the vehicle is loaded or not
-    private final String modelName; // The model name of the vehicle
     private double x; // The position on the x axis
     private double y; // The position on the y axis
     private double rotation = 0.0; // The rotation of the object, in degrees
     private double speed = 0.0; // The speed of the object
-    final private int weight;
 
 
     /**
@@ -78,7 +78,7 @@ public abstract class Vehicle implements IMovable {
 
 
     /**
-     * Returns the maximum acceleration of the model.Vehicle.
+     * Returns the maximum acceleration of the Vehicle.
      *
      * @return The increase in speed.
      **/
@@ -140,9 +140,18 @@ public abstract class Vehicle implements IMovable {
         return speed;
     }
 
+    public void setSpeed(double speed) {
+        this.speed = speed;
+    }
+
+    public void setRotation(double rotation) {
+        this.rotation = rotation;
+    }
+
     /**
      * Get rotation of the vehicle
-     * @return model.Vehicle rotation
+     *
+     * @return Vehicle rotation
      */
 
     public double getRotation() {
@@ -151,6 +160,7 @@ public abstract class Vehicle implements IMovable {
 
     /**
      * Changes the angle of the vehicle by deltaAngle
+     *
      * @param deltaAngle the change in angle
      */
     public final void rotateVehicle(double deltaAngle) {
@@ -167,6 +177,7 @@ public abstract class Vehicle implements IMovable {
 
     /**
      * Sets the x and y coordinates of the vehicle
+     *
      * @param x
      * @param y
      */

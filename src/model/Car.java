@@ -37,7 +37,7 @@ public abstract class Car extends Vehicle {
      * @return double
      */
     public double maxSpeed() {
-        return enginePower;
+        return enginePower * 1000 / getWeight();
     }
 
     /**
@@ -54,6 +54,7 @@ public abstract class Car extends Vehicle {
      */
     public void startEngine() {
         engineOn = true;
+        setSpeed(0.1);
     }
 
     /**
@@ -61,6 +62,7 @@ public abstract class Car extends Vehicle {
      */
     public void stopEngine() {
         engineOn = false;
+        setSpeed(0.0);
     }
 
     /**
