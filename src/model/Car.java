@@ -53,8 +53,10 @@ public abstract class Car extends Vehicle {
      * Turns on the engine
      */
     public void startEngine() {
-        engineOn = true;
-        setSpeed(0.1);
+        if (!engineOn) {
+            engineOn = true;
+            gas(0.5);
+        }
     }
 
     /**
@@ -62,7 +64,7 @@ public abstract class Car extends Vehicle {
      */
     public void stopEngine() {
         engineOn = false;
-        setSpeed(0.0);
+        stop();
     }
 
     /**

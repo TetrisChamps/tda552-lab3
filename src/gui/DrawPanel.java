@@ -48,9 +48,30 @@ public class DrawPanel extends JPanel {
 
     }
 
+    boolean isOutOfBounds(Class c, double x, double y) {
+        BufferedImage i = carImages.get(c);
+        if (x < 0) {
+            return true;
+        }
+        if (this.getWidth() < x + i.getWidth()) {
+            return true;
+        }
+        //if (y < 0) {
+        //    return true;
+        //}
+        //if (this.getHeight() < y + i.getHeight()) {
+        //    return true;
+        //}
+        return false;
+    }
+
+    BufferedImage getImageFromClass(Class c) {
+        return carImages.get(c);
+    }
+
     // TODO: Make this genereal for all cars
-    void moveit(Object c, int x, int y) {
-        imagePoints.put(new Point(x, y), carImages.get(c.getClass()));
+    void moveit(Class c, int x, int y) {
+        imagePoints.put(new Point(x, y), getImageFromClass(c));
     }
 
     // This method is called each time the panel updates/refreshes/repaints itself
@@ -58,6 +79,7 @@ public class DrawPanel extends JPanel {
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
+
         for (Map.Entry<Point, BufferedImage> entry : imagePoints.entrySet()) {
             Point p = entry.getKey();
             BufferedImage i = entry.getValue();

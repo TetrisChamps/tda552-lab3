@@ -140,12 +140,12 @@ public abstract class Vehicle implements IMovable {
         return speed;
     }
 
-    public void setSpeed(double speed) {
-        this.speed = speed;
+    public void stop() {
+        speed = 0;
     }
 
-    public void setRotation(double rotation) {
-        this.rotation = rotation;
+    public void invertDirection() {
+        rotateVehicle(180);
     }
 
     /**
