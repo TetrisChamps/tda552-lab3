@@ -10,7 +10,7 @@ public class Volvo240 extends Car{
     /**
      * The trim factor of the car, directly affects the acceleration of the car.
      */
-    public final static double trimFactor = 1.25;
+    private final static double trimFactor = 1.25;
 
     /**
      * Initiates a standard volvo240

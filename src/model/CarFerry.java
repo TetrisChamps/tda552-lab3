@@ -92,9 +92,10 @@ public class CarFerry extends Vehicle implements ICarTransporter {
         super.rotateVehicle(-10);
     }
 
-    public List<Car> getCars(){
-        return transporter.getCars();
+    public int getNumberOfCars(){
+        return transporter.getNumberOfCars();
     }
+
 
     public boolean docked(){
         return inDock;

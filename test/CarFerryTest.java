@@ -32,7 +32,7 @@ class CarFerryTest {
         }
         carFerry.dock();
         carFerry.addCar(car);
-        assertEquals(carFerry.getCars().size(), 1);
+        assertEquals(carFerry.getNumberOfCars(), 1);
     }
 
     @Test

@@ -10,7 +10,7 @@ public class CarTransporter extends Car implements  ICarTransporter{
     private Ramp ramp = new Ramp();
 
     public int getNumberOfCars(){
-        return transporter.getCars().size();
+        return transporter.getNumberOfCars();
     }
 
     /**
@@ -65,7 +65,7 @@ public class CarTransporter extends Car implements  ICarTransporter{
 
     /**
      * Returns true if ramp is down;
-     * @return
+     * @return returns the state of the ramp
      */
     public final boolean isRampDown(){
         return ramp.isDown();

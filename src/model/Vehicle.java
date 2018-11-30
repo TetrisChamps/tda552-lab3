@@ -163,7 +163,7 @@ public abstract class Vehicle implements IMovable {
      *
      * @param deltaAngle the change in angle
      */
-    public final void rotateVehicle(double deltaAngle) {
+    final void rotateVehicle(double deltaAngle) {
         this.rotation = applyDeltaToAngle(this.rotation, deltaAngle);
     }
 

@@ -12,6 +12,17 @@ public class CarCarrier {
     private int maxWeight;
 
     /**
+     * Creates the CarCarrier object.
+     *
+     * @param capacity  The amount of cars that the ferry can hold.
+     * @param maxWeight The maximum weight for a car that can be carried
+     */
+    public CarCarrier(int capacity, int maxWeight) {
+        this.capacity = capacity;
+        this.maxWeight = maxWeight;
+    }
+
+    /**
      * Sets the position of all the loaded cars
      *
      * @param x
@@ -21,17 +32,6 @@ public class CarCarrier {
         for (Car car : cars) {
             car.setPosition(x, y);
         }
-    }
-
-    /**
-     * Creates the CarCarrier object.
-     *
-     * @param capacity  The amount of cars that the ferry can hold.
-     * @param maxWeight The maximum weight for a car that can be carried
-     */
-    public CarCarrier(int capacity, int maxWeight) {
-        this.capacity = capacity;
-        this.maxWeight = maxWeight;
     }
 
     /**
@@ -85,12 +85,10 @@ public class CarCarrier {
     }
 
     /**
-     * returns the list of cars
-     * @return list of carried cars
+     * Returns number of loaded cars.
+     * @return the number of loaded cars.
      */
-    public List<Car> getCars() {
-        System.out.println("Car size: " + cars.size());
-        System.out.println("Cloned car size" + (List<Car>)cars.clone() );
-        return (List<Car>)cars.clone();
+    public int getNumberOfCars() {
+        return cars.size();
     }
 }

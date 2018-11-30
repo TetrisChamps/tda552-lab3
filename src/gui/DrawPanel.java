@@ -22,7 +22,7 @@ public class DrawPanel extends JPanel {
 
     // Just a single image, TODO: Generalize
     //BufferedImage volvoImage;
-    // To keep track of a singel cars position
+    // To keep track of a single cars position
     //Point volvoPoint = new Point();
     private Map<Object, BufferedImage> carImages = new HashMap<>();
     private Map<Point, BufferedImage> imagePoints = new HashMap<>();

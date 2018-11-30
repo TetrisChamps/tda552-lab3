@@ -11,9 +11,16 @@ public abstract class Car extends Vehicle {
     private boolean engineOn = false; // Whether the engine is on or not
 
     //TODO: add @params
+
     /**
      * Initiates a car, based on certain physical attributes.
-     *
+     * @param nrDoors The number of doors
+     * @param enginePower Power of the engine, also determines the max speed.
+     * @param color The color that the body of the car is painted.
+     * @param modelName The model name of the car.
+     * @param x The x coordinate of the car.
+     * @param y The y coordinate of the car.
+     * @param weight The weight of the car.
      */
     public Car(int nrDoors, double enginePower, Color color, String modelName, int x, int y, int weight) {
         super(color, modelName, x, y, weight);
