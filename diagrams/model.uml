@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>model</OriginalElement>
+  <nodes>
+    <node x="1039.0" y="178.0">model.Ramp</node>
+    <node x="1039.0" y="0.0">model.Board</node>
+    <node x="1216.0" y="0.0">model.CarCarrier</node>
+    <node x="430.0" y="1256.0">model.Scania</node>
+    <node x="0.0" y="1160.0">model.CarFerry</node>
+    <node x="814.0" y="1268.5">model.Saab95</node>
+    <node x="0.0" y="1575.0">model.Maths</node>
+    <node x="151.25" y="909.5">model.ICarTransporter</node>
+    <node x="212.31249999999997" y="153.0">model.Vehicle</node>
+    <node x="466.5" y="788.0">model.Car</node>
+    <node x="283.3125" y="0.0">model.IMovable</node>
+    <node x="614.0" y="1292.5">model.Volvo240</node>
+    <node x="223.99999999999997" y="1208.0">model.CarTransporter</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="model.CarTransporter" target="model.ICarTransporter">
+      <point x="-46.5" y="-137.0" />
+      <point x="39.75" y="39.5" />
+    </edge>
+    <edge source="model.Ramp" target="model.Board">
+      <point x="0.0" y="-76.5" />
+      <point x="0.0" y="64.0" />
+    </edge>
+    <edge source="model.Saab95" target="model.Car">
+      <point x="0.0" y="-76.5" />
+      <point x="904.0" y="1135.0" />
+      <point x="714.125" y="1135.0" />
+      <point x="106.125" y="161.0" />
+    </edge>
+    <edge source="model.Volvo240" target="model.Car">
+      <point x="0.0" y="-52.5" />
+      <point x="704.0" y="1135.0" />
+      <point x="643.375" y="1135.0" />
+      <point x="35.375" y="161.0" />
+    </edge>
+    <edge source="model.Car" target="model.Vehicle">
+      <point x="0.0" y="-161.0" />
+      <point x="608.0" y="763.0" />
+      <point x="433.5625" y="763.0" />
+      <point x="73.75" y="292.5" />
+    </edge>
+    <edge source="model.CarTransporter" target="model.Car">
+      <point x="46.5" y="-137.0" />
+      <point x="363.5" y="1135.0" />
+      <point x="501.875" y="1135.0" />
+      <point x="-106.125" y="161.0" />
+    </edge>
+    <edge source="model.Vehicle" target="model.IMovable">
+      <point x="0.0" y="-292.5" />
+      <point x="0.0" y="51.5" />
+    </edge>
+    <edge source="model.CarFerry" target="model.ICarTransporter">
+      <point x="51.0" y="-185.0" />
+      <point x="153.0" y="1135.0" />
+      <point x="191.0" y="1135.0" />
+      <point x="-39.75" y="39.5" />
+    </edge>
+    <edge source="model.Scania" target="model.Car">
+      <point x="0.0" y="-89.0" />
+      <point x="512.0" y="1135.0" />
+      <point x="572.625" y="1135.0" />
+      <point x="-35.375" y="161.0" />
+    </edge>
+    <edge source="model.CarFerry" target="model.Vehicle">
+      <point x="-51.0" y="-185.0" />
+      <point x="51.0" y="763.0" />
+      <point x="286.0625" y="763.0" />
+      <point x="-73.75" y="292.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.31796008869179615" x="994.2085076708506" y="629.4525801952577" />
+  <SelectedNodes>
+    <node>model.Board</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+    <Category>Constructors</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

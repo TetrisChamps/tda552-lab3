@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="50.0" y="9.076171875">model</node>
+    <node x="90.5" y="133.076171875">gui</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="gui" target="model">
+      <point x="31.666666666666657" y="-15.5" />
+      <point x="169.66666666666666" y="110.076171875" />
+      <point x="154.0" y="110.076171875" />
+      <point x="48.0" y="15.5" />
+    </edge>
+    <edge source="gui" target="gui">
+      <point x="31.66666666666667" y="15.5" />
+      <point x="169.66666666666669" y="204.076171875" />
+      <point x="50.5" y="204.076171875" />
+      <point x="50.5" y="138.24283854166666" />
+      <point x="-47.5" y="-10.333333333333336" />
+    </edge>
+    <edge source="model" target="model">
+      <point x="-48.0" y="15.5" />
+      <point x="58.0" y="60.076171875" />
+      <point x="30.0" y="60.076171875" />
+      <point x="30.0" y="36.201171875" />
+      <point x="-56.0" y="11.625" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.3000000000000003" x="389.7158043940467" y="150.6442239546421" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
