@@ -119,7 +119,7 @@ public abstract class Vehicle implements IMovable {
      */
 
     public void brake(double amount) {
-        decreaseSpeed(amount);
+        decreaseSpeed(Maths.clamp(amount, 0.0, 1.0));
     }
 
     /**
@@ -163,7 +163,7 @@ public abstract class Vehicle implements IMovable {
      *
      * @param deltaAngle the change in angle
      */
-    final void rotateVehicle(double deltaAngle) {
+    public final void rotateVehicle(double deltaAngle) {
         this.rotation = applyDeltaToAngle(this.rotation, deltaAngle);
     }
 

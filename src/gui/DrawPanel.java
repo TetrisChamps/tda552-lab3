@@ -20,10 +20,6 @@ import java.util.Map;
 
 public class DrawPanel extends JPanel {
 
-    // Just a single image, TODO: Generalize
-    //BufferedImage volvoImage;
-    // To keep track of a single cars position
-    //Point volvoPoint = new Point();
     private Map<Object, BufferedImage> carImages = new HashMap<>();
     private Map<Point, BufferedImage> imagePoints = new HashMap<>();
 
@@ -36,9 +32,10 @@ public class DrawPanel extends JPanel {
         try {
             // You can remove the "src\\pics" part if running outside of IntelliJ and
             // everything is in the same main folder.
-            // Rememember to rightclick src New -> Package -> name: pics -> MOVE *.jpg to pics.
+            // Rememember to right click src New -> Package -> name: pics -> MOVE *.jpg to pics.
             // if you are starting in IntelliJ.
             // Linux users need to modify \ to / in path string
+            //TODO
             carImages.put(Volvo240.class, ImageIO.read(new File("resources\\Volvo240.jpg")));
             carImages.put(Scania.class, ImageIO.read(new File("resources\\Scania.jpg")));
             carImages.put(Saab95.class, ImageIO.read(new File("resources\\Saab95.jpg")));
@@ -69,7 +66,6 @@ public class DrawPanel extends JPanel {
         return carImages.get(c);
     }
 
-    // TODO: Make this genereal for all cars
     void moveit(Class c, int x, int y) {
         imagePoints.put(new Point(x, y), getImageFromClass(c));
     }
